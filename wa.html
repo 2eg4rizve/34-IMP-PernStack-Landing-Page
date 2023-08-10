@@ -13,70 +13,44 @@
 
     <!-- nav -->
 
-    <section class="max-w-screen-xl mx-auto border-[2px] border-[#d8d647]">
+    <section class="max-w-screen-xl mx-auto border-[2px] border-[red]">
 
-        <!-- monitor -->
-        <div class="hidden md:block">
-            <div class=" flex justify-between ">
-
-                <div class="flex gap-12">
-                    <div class="flex  items-center gap-2">
-                        <img class="" src="./images/Pern Logo.svg" alt="" srcset="">
-                        <p class="font-bold">PERN <span class="text-[#6172F3]">Stack</span> </p>
-                    </div>
-                    <ul class="flex items-center gap-3 font-bold">
-                        <li><a>Home1</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pricing</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="">
-                        <a class="btn mr-[12px]">Log in</a>
-                        <button class="btn btn-primary">Sign Up</button>
-                    </div>
-                </div>
-    
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pricing</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <div class="flex  justify-center items-center gap-2">
+                <img class="" src="./images/Pern Logo.svg" alt="" srcset="">
+                <p class="font-bold">PERN <span class="text-[#6172F3]">Stack</span> </p>
             </div>
-    
-        </div>
-        
-        <!-- mobile -->
-
-        <div class="md:hidden border-[2px] border-[red]">
-
-            <div class="flex justify-between border-[5px] border-[#46bb3c]">
-
-                <div class="flex  items-center gap-2  border-[2px] border-[red]">
-                    <img class="" src="./images/Pern Logo.svg" alt="" srcset="">
-                    <p class="font-bold">PERN <span class="text-[#6172F3]">Stack</span> </p>
-                </div>
-
-                <div class="dropdown border-[10px] border-[#4444e3]">
-                    
-                    <label tabindex="0" class="btn "><img src="./images/menu-01.svg" alt="" srcset=""></label>
-                    <ul tabindex="0" class="dropdown-content z-[1]  p-2   rounded-box   ">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pricing</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                  </div>
             </div>
-
-
-        </div>
-
-
-
-
-
-
+            <div class="navbar-start hidden lg:flex ml-[-350px]">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home1</a></li>
+                <li><a>About</a></li>
+                <li><a>Pricing</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="hidden md:block mr-[150px]">
+              <a class="btn mr-[12px]">Log in</a>
+              <button class="btn btn-primary">Sign Up</button>
+            </div>
+          </div>
+       
     </section>
 
     <!-- banner -->
-    <section class="max-w-screen-xl mx-auto border-[2px] border-[red] mt-[70px]">
+    <section class="max-w-screen-xl mx-auto border-[2px] border-[red]">
         <p class="text-[60px] font-bold text-center">
             Empowering Web Developers:
             <br>
@@ -436,17 +410,17 @@
                 <p>Contact</p>
             </div>
 
-            <div class="mt-[50px] flex flex-col md:flex-row justify-between gap-3 ml-[20px] lg:ml-0">
-                <div class="order-2 lg:order-1">
+            <div class="mt-[50px] flex flex-col md:flex-row justify-between gap-3">
+                <div>
                     <p>© 2023 IMP PernStack. All rights reserved.</p>
                 </div>
-
-                <div class="order-1 lg:order-2 flex gap-[15px] ">
+                
+                <div class="flex gap-[15px] ">
                     <p>Terms</p>
                     <p>Privacy</p>
                     <p>Cookies</p>
                 </div>
-
+               
             </div>
 
 
